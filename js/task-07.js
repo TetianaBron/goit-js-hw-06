@@ -1,14 +1,26 @@
-// Задача 6-5
-// find
-// Получи объект пользователя (не массив) по уникальному значению свойства email.
+// Задача 6-7
+// reduce
+// Получи общую сумму баланса (сумму значений свойства balance) всех пользователей.
 
-// Используй деструктурирующее присваивание для параметра функции({ email })
-// без пробелов и переносов на новую строку.
+// Используй деструктурирующее присваивание для параметра функции { balance }
+// без пробелов и переносов на новую строку
 
 // Используй только перебирающие методы массива которые не изменяют(не мутируют)
 // исходный массив.Т.е.нельзя использовать for, splice, push и т.п.мутирующие методы.
 
 // const users = [
+//   {
+//     id: '701b29c3-b35d-4cf1-a5f6-8b12b29a5081',
+//     name: 'Moore Hensley',
+//     email: 'moorehensley@indexia.com',
+//     eyeColor: 'blue',
+//     friends: ['Sharron Pace'],
+//     isActive: false,
+//     balance: 2811,
+//     skills: ['ipsum', 'lorem'],
+//     gender: 'male',
+//     age: 37,
+//   },
 //   {
 //     id: '88beb2f3-e4c2-49f3-a0a0-ecf957a95af3',
 //     name: 'Ross Vazquez',
@@ -35,8 +47,11 @@
 //   },
 // ];
 
-// const getUserWithEmail = (array, mail) =>
-//   array.find(({ email }) => email == mail);
+// const calculateTotalBalance = array =>
+//   array.reduce((totalBalance, el) => totalBalance + el.balance, 0);
 
-// console.log(getUserWithEmail(users, 'rossvazquez@xinware.com'));
-// console.log(getUserWithEmail(users, 'blackburndotson@furnigeer.com'));
+// const calculateTotalBalance = array =>
+//   array.reduce((totalBalance, { balance }) => totalBalance + balance, 0);
+
+// console.log(calculateTotalBalance(users));
+// // 8102
