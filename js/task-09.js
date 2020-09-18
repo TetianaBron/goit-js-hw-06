@@ -23,4 +23,7 @@
 // Используй только перебирающие методы массива которые не изменяют (не мутируют) исходный массив.
 // Т.е. нельзя использовать for, splice, push и т.п. мутирующие методы.
 
-const getNamesSortedByFriendsCount = array => array;
+// const getNamesSortedByFriendsCount = array =>
+//   [...array]
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//     .map(({ name }) => name);
